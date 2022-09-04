@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "prod": "node dist/server.js",
+    "start": "node dist/server.js",
     "build": "rm -rf dist/ && tsc",
     "lint": "eslint . --ext .js,.ts --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix"
