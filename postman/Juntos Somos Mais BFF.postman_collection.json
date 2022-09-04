@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "56e8e99c-4b1a-4bc6-8032-cef9f0a9965e",
+		"name": "Juntos Somos Mais BFF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User States",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/users/states",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"states"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Country States",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/users/states",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users",
+								"states"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, X-Requested-With,Content-Type,Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "347"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15b-h2lS734d5YxoD+oV7UcoN/jllxY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 22:14:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"acre\",\n    \"alagoas\",\n    \"amapá\",\n    \"amazonas\",\n    \"bahia\",\n    \"ceará\",\n    \"distrito federal\",\n    \"espírito santo\",\n    \"goiás\",\n    \"maranhão\",\n    \"mato grosso\",\n    \"mato grosso do sul\",\n    \"minas gerais\",\n    \"paraná\",\n    \"paraíba\",\n    \"pará\",\n    \"pernambuco\",\n    \"piauí\",\n    \"rio de janeiro\",\n    \"rio grande do norte\",\n    \"rio grande do sul\",\n    \"rondônia\",\n    \"roraima\",\n    \"santa catarina\",\n    \"sergipe\",\n    \"são paulo\",\n    \"tocantins\"\n]"
+				}
+			]
+		}
+	]
+}

@@ -5,5 +5,6 @@ const router = express.Router()
 
 // Users
 router.get('/users/data', usersController.getAllData)
+router.get('/users/states', usersController.getUserStates)
 
 export = router
