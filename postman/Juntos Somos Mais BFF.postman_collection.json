@@ -6,35 +6,41 @@
 	},
 	"item": [
 		{
-			"name": "User States",
+			"name": "User List",
 			"request": {
 				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{host}}/users/states",
-					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"users",
-						"states"
-					]
-				}
+				"header": []
 			},
 			"response": [
 				{
-					"name": "Country States",
+					"name": "User List",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/users/states",
+							"raw": "{{host}}/users",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"users",
-								"states"
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "espírito santo",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -60,15 +66,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "347"
+							"value": "1891"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"15b-h2lS734d5YxoD+oV7UcoN/jllxY\""
+							"value": "W/\"763-h1g8GOKfaglUFBEe3GlHYbllMe0\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 04 Sep 2022 22:14:02 GMT"
+							"value": "Sun, 04 Sep 2022 23:45:02 GMT"
 						},
 						{
 							"key": "Connection",
@@ -80,7 +86,232 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    \"acre\",\n    \"alagoas\",\n    \"amapá\",\n    \"amazonas\",\n    \"bahia\",\n    \"ceará\",\n    \"distrito federal\",\n    \"espírito santo\",\n    \"goiás\",\n    \"maranhão\",\n    \"mato grosso\",\n    \"mato grosso do sul\",\n    \"minas gerais\",\n    \"paraná\",\n    \"paraíba\",\n    \"pará\",\n    \"pernambuco\",\n    \"piauí\",\n    \"rio de janeiro\",\n    \"rio grande do norte\",\n    \"rio grande do sul\",\n    \"rondônia\",\n    \"roraima\",\n    \"santa catarina\",\n    \"sergipe\",\n    \"são paulo\",\n    \"tocantins\"\n]"
+					"body": "{\n    \"users\": [\n        {\n            \"id\": \"alejandra.rodrigues\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/18.jpg\",\n            \"name\": \"alejandra rodrigues\",\n            \"street\": \"3833 rua santa catarina \",\n            \"city\": \"umuarama\",\n            \"state\": \"santa catarina\",\n            \"postcode\": 43646\n        },\n        {\n            \"id\": \"armando.dacruz\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/54.jpg\",\n            \"name\": \"armando da cruz\",\n            \"street\": \"7032 rua santa luzia \",\n            \"city\": \"natal\",\n            \"state\": \"roraima\",\n            \"postcode\": 36455\n        },\n        {\n            \"id\": \"alda.barbosa\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/92.jpg\",\n            \"name\": \"alda barbosa\",\n            \"street\": \"3987 rua são luiz \",\n            \"city\": \"bento gonçalves\",\n            \"state\": \"paraná\",\n            \"postcode\": 37196\n        },\n        {\n            \"id\": \"marilene.darocha\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/31.jpg\",\n            \"name\": \"marilene da rocha\",\n            \"street\": \"5632 rua dois\",\n            \"city\": \"eunápolis\",\n            \"state\": \"tocantins\",\n            \"postcode\": 98976\n        },\n        {\n            \"id\": \"ariela.nunes\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/46.jpg\",\n            \"name\": \"ariela nunes\",\n            \"street\": \"1148 rua santa luzia \",\n            \"city\": \"coronel fabriciano\",\n            \"state\": \"goiás\",\n            \"postcode\": 78197\n        },\n        {\n            \"id\": \"eleuterio.almeida\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/61.jpg\",\n            \"name\": \"eleutério almeida\",\n            \"street\": \"8578 rua amazonas \",\n            \"city\": \"balneário camboriú\",\n            \"state\": \"tocantins\",\n            \"postcode\": 28829\n        },\n        {\n            \"id\": \"melania.jesus\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/39.jpg\",\n            \"name\": \"melânia jesus\",\n            \"street\": \"8454 rua quatro\",\n            \"city\": \"itaguaí\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 68256\n        },\n        {\n            \"id\": \"apolo.nunes\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/72.jpg\",\n            \"name\": \"apolo nunes\",\n            \"street\": \"8719 rua treze \",\n            \"city\": \"nova iguaçu\",\n            \"state\": \"santa catarina\",\n            \"postcode\": 45653\n        },\n        {\n            \"id\": \"gilda.pires\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/33.jpg\",\n            \"name\": \"gilda pires\",\n            \"street\": \"9934 rua santa catarina \",\n            \"city\": \"cubatão\",\n            \"state\": \"minas gerais\",\n            \"postcode\": 56209\n        }\n    ],\n    \"totalPages\": 23,\n    \"totalUsers\": 200,\n    \"currentPage\": 1\n}"
+				},
+				{
+					"name": "User List - Sort by Name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/users?sort=name",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "espírito santo",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, X-Requested-With,Content-Type,Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1867"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74b-E/iUGFfiXqXwAnfLKtu55lxJSOs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 23:45:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"users\": [\n        {\n            \"id\": \"abraim.dacosta\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/87.jpg\",\n            \"name\": \"abraim da costa\",\n            \"street\": \"1315 avenida d. pedro ii\",\n            \"city\": \"taubaté\",\n            \"state\": \"minas gerais\",\n            \"postcode\": 66230\n        },\n        {\n            \"id\": \"ada.melo\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/83.jpg\",\n            \"name\": \"ada melo\",\n            \"street\": \"7975 rua santo antônio \",\n            \"city\": \"bacabal\",\n            \"state\": \"bahia\",\n            \"postcode\": 13490\n        },\n        {\n            \"id\": \"adelindo.porto\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/97.jpg\",\n            \"name\": \"adelindo porto\",\n            \"street\": \"8611 rua são joão \",\n            \"city\": \"trindade\",\n            \"state\": \"amapá\",\n            \"postcode\": 31707\n        },\n        {\n            \"id\": \"adruzilo.fogaca\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/63.jpg\",\n            \"name\": \"adruzilo fogaça\",\n            \"street\": \"8717 rua quatro\",\n            \"city\": \"sete lagoas\",\n            \"state\": \"bahia\",\n            \"postcode\": 42533\n        },\n        {\n            \"id\": \"aderito.dacosta\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/18.jpg\",\n            \"name\": \"adérito da costa\",\n            \"street\": \"6167 rua amazonas \",\n            \"city\": \"volta redonda\",\n            \"state\": \"piauí\",\n            \"postcode\": 96964\n        },\n        {\n            \"id\": \"aderito.damota\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/31.jpg\",\n            \"name\": \"adérito da mota\",\n            \"street\": \"346 avenida d. pedro ii\",\n            \"city\": \"aparecida de goiânia\",\n            \"state\": \"ceará\",\n            \"postcode\": 85870\n        },\n        {\n            \"id\": \"afonsino.campos\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/86.jpg\",\n            \"name\": \"afonsino campos\",\n            \"street\": \"6031 rua principal\",\n            \"city\": \"queimados\",\n            \"state\": \"minas gerais\",\n            \"postcode\": 58553\n        },\n        {\n            \"id\": \"ainhoa.souza\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/33.jpg\",\n            \"name\": \"ainhoa souza\",\n            \"street\": \"933 rua vinte de setembro\",\n            \"city\": \"campinas\",\n            \"state\": \"maranhão\",\n            \"postcode\": 22913\n        },\n        {\n            \"id\": \"albenise.sales\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/76.jpg\",\n            \"name\": \"albenise sales\",\n            \"street\": \"8361 rua dezessete \",\n            \"city\": \"três lagoas\",\n            \"state\": \"minas gerais\",\n            \"postcode\": 24453\n        }\n    ],\n    \"totalPages\": 23,\n    \"totalUsers\": 200,\n    \"currentPage\": 1\n}"
+				},
+				{
+					"name": "User List - Filter by State",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/users?state=espírito santo",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "espírito santo"
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, X-Requested-With,Content-Type,Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1945"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"799-ntOvB1VnHwKy0wr3L2GYiIGo/Xw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 23:45:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"users\": [\n        {\n            \"id\": \"melania.jesus\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/39.jpg\",\n            \"name\": \"melânia jesus\",\n            \"street\": \"8454 rua quatro\",\n            \"city\": \"itaguaí\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 68256\n        },\n        {\n            \"id\": \"priteche.moura\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/30.jpg\",\n            \"name\": \"priteche moura\",\n            \"street\": \"2416 avenida brasil \",\n            \"city\": \"belo horizonte\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 96411\n        },\n        {\n            \"id\": \"rubi.rodrigues\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/39.jpg\",\n            \"name\": \"rubi rodrigues\",\n            \"street\": \"4751 avenida vinícius de morais\",\n            \"city\": \"santos\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 91940\n        },\n        {\n            \"id\": \"denice.ribeiro\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/84.jpg\",\n            \"name\": \"denice ribeiro\",\n            \"street\": \"969 rua da paz \",\n            \"city\": \"alagoinhas\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 57733\n        },\n        {\n            \"id\": \"melinda.lopes\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/41.jpg\",\n            \"name\": \"melinda lopes\",\n            \"street\": \"6458 rua vinte e um\",\n            \"city\": \"ji-paraná\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 56735\n        },\n        {\n            \"id\": \"mari.caldeira\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/39.jpg\",\n            \"name\": \"mari caldeira\",\n            \"street\": \"6216 avenida da democracia\",\n            \"city\": \"várzea paulista\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 50531\n        },\n        {\n            \"id\": \"eliseu.pinto\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/19.jpg\",\n            \"name\": \"eliseu pinto\",\n            \"street\": \"3024 avenida vinícius de morais\",\n            \"city\": \"são luís\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 15220\n        },\n        {\n            \"id\": \"goncalo.sales\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/76.jpg\",\n            \"name\": \"gonçalo sales\",\n            \"street\": \"2243 rua santa maria \",\n            \"city\": \"porto velho\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 12253\n        },\n        {\n            \"id\": \"heldemaro.almeida\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/79.jpg\",\n            \"name\": \"heldemaro almeida\",\n            \"street\": \"1361 rua castro alves \",\n            \"city\": \"santa luzia\",\n            \"state\": \"espírito santo\",\n            \"postcode\": 73284\n        }\n    ],\n    \"totalPages\": 1,\n    \"totalUsers\": 9,\n    \"currentPage\": 1\n}"
+				},
+				{
+					"name": "User List - Paginated",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/users?page=2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "state",
+									"value": "espírito santo",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, X-Requested-With,Content-Type,Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1898"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"76a-I8cOjjk2ZZKEZ7GXnAGzwTCQY8M\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 23:45:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"users\": [\n        {\n            \"id\": \"quevin.cavalcanti\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/87.jpg\",\n            \"name\": \"quévin cavalcanti\",\n            \"street\": \"7351 rua paraná \",\n            \"city\": \"parnamirim\",\n            \"state\": \"mato grosso\",\n            \"postcode\": 44444\n        },\n        {\n            \"id\": \"oceano.jesus\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/51.jpg\",\n            \"name\": \"oceano jesus\",\n            \"street\": \"2528 rua dezesseis de maio\",\n            \"city\": \"balneário camboriú\",\n            \"state\": \"paraná\",\n            \"postcode\": 78189\n        },\n        {\n            \"id\": \"girao.darosa\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/99.jpg\",\n            \"name\": \"girão da rosa\",\n            \"street\": \"3438 rua da saudade\",\n            \"city\": \"são mateus\",\n            \"state\": \"mato grosso do sul\",\n            \"postcode\": 63882\n        },\n        {\n            \"id\": \"everaldo.daconceicao\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/98.jpg\",\n            \"name\": \"everaldo da conceição\",\n            \"street\": \"2927 rua doze \",\n            \"city\": \"guarapari\",\n            \"state\": \"tocantins\",\n            \"postcode\": 22710\n        },\n        {\n            \"id\": \"urea.costa\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/48.jpg\",\n            \"name\": \"urea costa\",\n            \"street\": \"9533 rua dezesseis de maio\",\n            \"city\": \"muriaé\",\n            \"state\": \"santa catarina\",\n            \"postcode\": 11894\n        },\n        {\n            \"id\": \"otilia.nogueira\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/61.jpg\",\n            \"name\": \"otília nogueira\",\n            \"street\": \"7249 rua santa luzia \",\n            \"city\": \"aracaju\",\n            \"state\": \"mato grosso\",\n            \"postcode\": 25734\n        },\n        {\n            \"id\": \"josini.nascimento\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/50.jpg\",\n            \"name\": \"josini nascimento\",\n            \"street\": \"8824 rua santa catarina \",\n            \"city\": \"caxias\",\n            \"state\": \"acre\",\n            \"postcode\": 43167\n        },\n        {\n            \"id\": \"dora.darocha\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/30.jpg\",\n            \"name\": \"dora da rocha\",\n            \"street\": \"4726 avenida da democracia\",\n            \"city\": \"mogi guaçu\",\n            \"state\": \"pará\",\n            \"postcode\": 81224\n        },\n        {\n            \"id\": \"adelindo.porto\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/97.jpg\",\n            \"name\": \"adelindo porto\",\n            \"street\": \"8611 rua são joão \",\n            \"city\": \"trindade\",\n            \"state\": \"amapá\",\n            \"postcode\": 31707\n        }\n    ],\n    \"totalPages\": 23,\n    \"totalUsers\": 200,\n    \"currentPage\": 2\n}"
 				}
 			]
 		},
@@ -160,6 +391,85 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"id\": \"alejandra.rodrigues\",\n    \"gender\": \"female\",\n    \"name\": {\n        \"title\": \"mrs\",\n        \"first\": \"alejandra\",\n        \"last\": \"rodrigues\"\n    },\n    \"location\": {\n        \"street\": \"3833 rua santa catarina \",\n        \"city\": \"umuarama\",\n        \"state\": \"santa catarina\",\n        \"postcode\": 43646,\n        \"coordinates\": {\n            \"latitude\": \"-50.7186\",\n            \"longitude\": \"-20.4596\"\n        },\n        \"timezone\": {\n            \"offset\": \"+3:00\",\n            \"description\": \"Baghdad, Riyadh, Moscow, St. Petersburg\"\n        }\n    },\n    \"email\": \"alejandra.rodrigues@example.com\",\n    \"dob\": {\n        \"date\": \"1974-05-16T14:46:15Z\",\n        \"age\": 44\n    },\n    \"registered\": {\n        \"date\": \"2013-03-06T16:09:16Z\",\n        \"age\": 5\n    },\n    \"phone\": \"(09) 7033-7406\",\n    \"cell\": \"(54) 3190-3469\",\n    \"picture\": {\n        \"large\": \"https://randomuser.me/api/portraits/women/18.jpg\",\n        \"medium\": \"https://randomuser.me/api/portraits/med/women/18.jpg\",\n        \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/18.jpg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "User States",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/users/states",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"states"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Country States",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/users/states",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users",
+								"states"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, X-Requested-With,Content-Type,Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "347"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15b-h2lS734d5YxoD+oV7UcoN/jllxY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 22:14:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"acre\",\n    \"alagoas\",\n    \"amapá\",\n    \"amazonas\",\n    \"bahia\",\n    \"ceará\",\n    \"distrito federal\",\n    \"espírito santo\",\n    \"goiás\",\n    \"maranhão\",\n    \"mato grosso\",\n    \"mato grosso do sul\",\n    \"minas gerais\",\n    \"paraná\",\n    \"paraíba\",\n    \"pará\",\n    \"pernambuco\",\n    \"piauí\",\n    \"rio de janeiro\",\n    \"rio grande do norte\",\n    \"rio grande do sul\",\n    \"rondônia\",\n    \"roraima\",\n    \"santa catarina\",\n    \"sergipe\",\n    \"são paulo\",\n    \"tocantins\"\n]"
 				}
 			]
 		}
