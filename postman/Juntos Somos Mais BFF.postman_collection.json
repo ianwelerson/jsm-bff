@@ -83,6 +83,85 @@
 					"body": "[\n    \"acre\",\n    \"alagoas\",\n    \"amapá\",\n    \"amazonas\",\n    \"bahia\",\n    \"ceará\",\n    \"distrito federal\",\n    \"espírito santo\",\n    \"goiás\",\n    \"maranhão\",\n    \"mato grosso\",\n    \"mato grosso do sul\",\n    \"minas gerais\",\n    \"paraná\",\n    \"paraíba\",\n    \"pará\",\n    \"pernambuco\",\n    \"piauí\",\n    \"rio de janeiro\",\n    \"rio grande do norte\",\n    \"rio grande do sul\",\n    \"rondônia\",\n    \"roraima\",\n    \"santa catarina\",\n    \"sergipe\",\n    \"são paulo\",\n    \"tocantins\"\n]"
 				}
 			]
+		},
+		{
+			"name": "User Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/users/alejandra.rodrigues",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"alejandra.rodrigues"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/users/alejandra.rodrigues",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users",
+								"alejandra.rodrigues"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, X-Requested-With,Content-Type,Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "759"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f7-MEEFVy/oZueS31GlTr9YjIN+pAM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Sep 2022 22:52:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"alejandra.rodrigues\",\n    \"gender\": \"female\",\n    \"name\": {\n        \"title\": \"mrs\",\n        \"first\": \"alejandra\",\n        \"last\": \"rodrigues\"\n    },\n    \"location\": {\n        \"street\": \"3833 rua santa catarina \",\n        \"city\": \"umuarama\",\n        \"state\": \"santa catarina\",\n        \"postcode\": 43646,\n        \"coordinates\": {\n            \"latitude\": \"-50.7186\",\n            \"longitude\": \"-20.4596\"\n        },\n        \"timezone\": {\n            \"offset\": \"+3:00\",\n            \"description\": \"Baghdad, Riyadh, Moscow, St. Petersburg\"\n        }\n    },\n    \"email\": \"alejandra.rodrigues@example.com\",\n    \"dob\": {\n        \"date\": \"1974-05-16T14:46:15Z\",\n        \"age\": 44\n    },\n    \"registered\": {\n        \"date\": \"2013-03-06T16:09:16Z\",\n        \"age\": 5\n    },\n    \"phone\": \"(09) 7033-7406\",\n    \"cell\": \"(54) 3190-3469\",\n    \"picture\": {\n        \"large\": \"https://randomuser.me/api/portraits/women/18.jpg\",\n        \"medium\": \"https://randomuser.me/api/portraits/med/women/18.jpg\",\n        \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/18.jpg\"\n    }\n}"
+				}
+			]
 		}
 	]
 }

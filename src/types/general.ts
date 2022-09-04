@@ -1,4 +1,4 @@
-import { UserDataResponse} from './user'
+import { UserData} from './user'
 
 export interface DateFormat {
   date: string
@@ -11,5 +11,5 @@ export interface SelectOption {
 }
 
 export interface IntegrationResponse {
-  results: UserDataResponse[]
+  results: UserData[]
 }

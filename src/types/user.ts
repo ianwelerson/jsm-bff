@@ -28,7 +28,6 @@ export interface UserName {
 }
 
 export interface UserData {
-  id: string
   name: UserName
   gender: string
   picture: UserPictures
@@ -53,15 +52,6 @@ export interface UserDataSummary {
 // Response Related
 export interface UserDataResponse extends UserData {
   id: string
-  name: UserName
-  gender: string
-  picture: UserPictures
-  location: UserLocation
-  email: string
-  dob: DateFormat
-  registered: DateFormat
-  phone: string
-  cell: string
 }
 
 export interface UserListResponse {
