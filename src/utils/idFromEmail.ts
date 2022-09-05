@@ -1,3 +1,5 @@
+import { normalizeString } from './'
+
 const idFromEmail = (email: string) => {
   const stringParts = email.split('@')
 
@@ -5,9 +7,7 @@ const idFromEmail = (email: string) => {
     throw new Error('Erro ao criar ID')
   }
 
-  const normalizedId = stringParts[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-
-  return normalizedId
+  return normalizeString(stringParts[0])
 }
 
 export {

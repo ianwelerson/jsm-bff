@@ -33,6 +33,11 @@
 							"key": "sort",
 							"value": "name",
 							"disabled": true
+						},
+						{
+							"key": "query",
+							"value": "Dú",
+							"disabled": true
 						}
 					]
 				}
@@ -338,6 +343,86 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"users\": [\n        {\n            \"id\": \"quevin.cavalcanti\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/87.jpg\",\n            \"name\": \"quévin cavalcanti\",\n            \"street\": \"7351 rua paraná \",\n            \"city\": \"parnamirim\",\n            \"state\": \"mato grosso\",\n            \"postcode\": 44444\n        },\n        {\n            \"id\": \"oceano.jesus\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/51.jpg\",\n            \"name\": \"oceano jesus\",\n            \"street\": \"2528 rua dezesseis de maio\",\n            \"city\": \"balneário camboriú\",\n            \"state\": \"paraná\",\n            \"postcode\": 78189\n        },\n        {\n            \"id\": \"girao.darosa\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/99.jpg\",\n            \"name\": \"girão da rosa\",\n            \"street\": \"3438 rua da saudade\",\n            \"city\": \"são mateus\",\n            \"state\": \"mato grosso do sul\",\n            \"postcode\": 63882\n        },\n        {\n            \"id\": \"everaldo.daconceicao\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/98.jpg\",\n            \"name\": \"everaldo da conceição\",\n            \"street\": \"2927 rua doze \",\n            \"city\": \"guarapari\",\n            \"state\": \"tocantins\",\n            \"postcode\": 22710\n        },\n        {\n            \"id\": \"urea.costa\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/48.jpg\",\n            \"name\": \"urea costa\",\n            \"street\": \"9533 rua dezesseis de maio\",\n            \"city\": \"muriaé\",\n            \"state\": \"santa catarina\",\n            \"postcode\": 11894\n        },\n        {\n            \"id\": \"otilia.nogueira\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/61.jpg\",\n            \"name\": \"otília nogueira\",\n            \"street\": \"7249 rua santa luzia \",\n            \"city\": \"aracaju\",\n            \"state\": \"mato grosso\",\n            \"postcode\": 25734\n        },\n        {\n            \"id\": \"josini.nascimento\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/50.jpg\",\n            \"name\": \"josini nascimento\",\n            \"street\": \"8824 rua santa catarina \",\n            \"city\": \"caxias\",\n            \"state\": \"acre\",\n            \"postcode\": 43167\n        },\n        {\n            \"id\": \"dora.darocha\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/30.jpg\",\n            \"name\": \"dora da rocha\",\n            \"street\": \"4726 avenida da democracia\",\n            \"city\": \"mogi guaçu\",\n            \"state\": \"pará\",\n            \"postcode\": 81224\n        },\n        {\n            \"id\": \"adelindo.porto\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/97.jpg\",\n            \"name\": \"adelindo porto\",\n            \"street\": \"8611 rua são joão \",\n            \"city\": \"trindade\",\n            \"state\": \"amapá\",\n            \"postcode\": 31707\n        }\n    ],\n    \"totalPages\": 23,\n    \"totalUsers\": 200,\n    \"currentPage\": 2\n}"
+				},
+				{
+					"name": "User List - Query by name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/users?query=Dú",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "espírito santo",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name",
+									"disabled": true
+								},
+								{
+									"key": "query",
+									"value": "Dú"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin, X-Requested-With,Content-Type,Accept, Authorization"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1931"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"78b-MMZPY6EB0IVnVcPbLS4usK2gXTU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 05 Sep 2022 21:55:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"users\": [\n        {\n            \"id\": \"baldomero.duarte\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/35.jpg\",\n            \"name\": \"baldomero duarte\",\n            \"street\": \"6405 avenida da legalidade\",\n            \"city\": \"são mateus\",\n            \"state\": \"distrito federal\",\n            \"postcode\": 93854\n        },\n        {\n            \"id\": \"dulia.carvalho\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/46.jpg\",\n            \"name\": \"dúlia carvalho\",\n            \"street\": \"8479 rua santa maria \",\n            \"city\": \"ilhéus\",\n            \"state\": \"pernambuco\",\n            \"postcode\": 90379\n        },\n        {\n            \"id\": \"jandira.duarte\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/53.jpg\",\n            \"name\": \"jandira duarte\",\n            \"street\": \"3568 rua belo horizonte \",\n            \"city\": \"francisco morato\",\n            \"state\": \"piauí\",\n            \"postcode\": 86481\n        },\n        {\n            \"id\": \"indra.duarte\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/66.jpg\",\n            \"name\": \"indra duarte\",\n            \"street\": \"3275 rua belo horizonte \",\n            \"city\": \"cotia\",\n            \"state\": \"rio de janeiro\",\n            \"postcode\": 21886\n        },\n        {\n            \"id\": \"cloe.duarte\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/20.jpg\",\n            \"name\": \"cloé duarte\",\n            \"street\": \"6456 rua sete de setembro \",\n            \"city\": \"itapecerica da serra\",\n            \"state\": \"piauí\",\n            \"postcode\": 37963\n        },\n        {\n            \"id\": \"alexandrino.duarte\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/83.jpg\",\n            \"name\": \"alexandrino duarte\",\n            \"street\": \"2135 rua quatro\",\n            \"city\": \"campinas\",\n            \"state\": \"rio de janeiro\",\n            \"postcode\": 36556\n        },\n        {\n            \"id\": \"alexandra.duarte\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/48.jpg\",\n            \"name\": \"alexandra duarte\",\n            \"street\": \"6434 rua são francisco \",\n            \"city\": \"varginha\",\n            \"state\": \"pernambuco\",\n            \"postcode\": 28403\n        },\n        {\n            \"id\": \"eduardo.rocha\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/men/10.jpg\",\n            \"name\": \"eduardo rocha\",\n            \"street\": \"8440 avenida vinícius de morais\",\n            \"city\": \"sobral\",\n            \"state\": \"são paulo\",\n            \"postcode\": 94925\n        },\n        {\n            \"id\": \"cenilda.duarte\",\n            \"picture\": \"https://randomuser.me/api/portraits/med/women/32.jpg\",\n            \"name\": \"cenilda duarte\",\n            \"street\": \"6075 beco dos namorados\",\n            \"city\": \"santo andré\",\n            \"state\": \"rio de janeiro\",\n            \"postcode\": 39389\n        }\n    ],\n    \"totalPages\": 2,\n    \"totalUsers\": 10,\n    \"currentPage\": 1\n}"
 				}
 			]
 		},
