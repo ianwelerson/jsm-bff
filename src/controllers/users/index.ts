@@ -1,7 +1,6 @@
 import { Request, Response } from 'express'
 import axios, { AxiosResponse } from 'axios'
-import { idFromEmail } from '../../utils/idFromEmail'
-import { paginateResult } from '../../utils/paginate'
+import { idFromEmail, paginateResult, normalizeString } from '../../utils'
 import type { IntegrationResponse, UserDataSummary, UserDataResponse } from '../../types'
 
 const MAX_USERS_PER_PAGE = 9
@@ -16,6 +15,7 @@ const getUserList = async (req: Request, res: Response) => {
     // Filters and sort
     const stateFilter = req.query.state ? (req.query.state as string).split(',') : null
     const sortData = req.query.sort as keyof UserDataSummary
+    const queryFilter = req.query.query as string
 
     let userList: UserDataSummary[] = apiData.results.map(user => {
       return {
@@ -31,6 +31,10 @@ const getUserList = async (req: Request, res: Response) => {
 
     if (stateFilter) {
       userList = userList.filter(user => stateFilter.includes(user.state.toLowerCase()))
+    }
+
+    if (queryFilter) {
+      userList = userList.filter((user) => normalizeString(user.name).includes(normalizeString(queryFilter.toLowerCase())))
     }
 
     if (sortData) {
